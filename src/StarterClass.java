@@ -8,9 +8,11 @@ public class StarterClass {
         Options op = menu.display();
         switch (op) {
             case EXERCISE1 -> {
+                System.out.println("You selected Exo 1");
                 Exercise1 ex = new Exercise1();
             }
             case EXERCISE2 -> {
+                System.out.println("You selected Exo 2");
                 Exercise2 ex = new Exercise2();
             }
             default -> {

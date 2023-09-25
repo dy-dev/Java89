@@ -6,10 +6,8 @@ public class Menu {
         menuInfo = new StringBuilder("Select your option :\n");
         int i = 0;
         for (Options op :Options.values()  ) {
-            menuInfo.append("\t- Type ").append(i++).append(" for : ").append(op.toString());
-
+            menuInfo.append(op.toString()).append("\n");
         }
-
     }
 
     public Options display() {

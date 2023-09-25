@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum Options {
-    EXERCISE1(0),
-    EXERCISE2(1);
+    EXERCISE1(1),
+    EXERCISE2(2);
     private final int value;
     private static final Map<Integer, Options> map = new HashMap<>();
 
@@ -22,5 +22,14 @@ public enum Options {
 
     public int getValue() {
         return value;
+    }
+
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("\t- Type ").append(value).append(" for : ").append(super.toString());
+
+        return builder.toString();
     }
 }

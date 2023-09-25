@@ -4,13 +4,19 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class StarterClass {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String name = AskUserForName(scan);
-        System.out.println("Bonjour " + name);
-    }
+        Menu menu = new Menu();
+        Options op = menu.display();
+        switch (op) {
+            case EXERCISE1 -> {
+                Exercise1 ex = new Exercise1();
+            }
+            case EXERCISE2 -> {
+                Exercise2 ex = new Exercise2();
+            }
+            default -> {
+                System.out.println("Pas d'options");
+            }
+        }
+       }
 
-    private static String AskUserForName(Scanner scan) {
-        System.out.println("Please enter your name");
-        return scan.nextLine();
-    }
 }

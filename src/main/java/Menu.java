@@ -12,8 +12,12 @@ public class Menu {
 
     public Options display() {
         System.out.println(menuInfo.toString());
-        Scanner scan = new Scanner(System.in);
-        int returnedValue = scan.nextInt();
+
+        int returnedValue = StarterClass.scan.nextInt();
+        //Flush from scan buffer the carriage return not consumed by nextInt
+        //if not done, if in code there a nextLine, the carriage return will then be consumed
+        //and program will not stop to get user input
+        StarterClass.scan.nextLine();
         return Options.valueOf(returnedValue);
     }
 }

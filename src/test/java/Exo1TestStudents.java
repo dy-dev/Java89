@@ -1,13 +1,13 @@
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Exercise1Test {
+class Exo1TestStudents {
+
     @Test
     void createGrades() {
         Random random = new Random();
@@ -24,7 +24,7 @@ class Exercise1Test {
         int gradeMath1 = studentList.get(0).getGradesMap().get(mathSubject);
         int gradeMath2 = studentList.get(maxStudent-1).getGradesMap().get(mathSubject);
 
-        Exercise1 ex = new Exercise1(studentList);
+        Exo1Students ex = new Exo1Students(studentList);
         ex.Invert();
 
         assertEquals(ex.getStudentList().get(0).getGradesMap().get(mathSubject), gradeMath2);

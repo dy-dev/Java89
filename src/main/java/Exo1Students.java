@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Exercise1 {
+public class Exo1Students {
     private List<Student> m_StudentList;
 
-    public Exercise1() {
+    public Exo1Students() {
         m_StudentList = new ArrayList();
         for (int i = 0; i < 3; i++) {
             System.out.println("Get student name : ");
@@ -23,7 +23,7 @@ public class Exercise1 {
             System.out.println(stud.toString());
         }
     }
-    public Exercise1(List<Student> p_StudentList)
+    public Exo1Students(List<Student> p_StudentList)
     {
         m_StudentList = p_StudentList;
     }

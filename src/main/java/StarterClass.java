@@ -8,13 +8,13 @@ public class StarterClass {
         Menu menu = new Menu();
         Options op = menu.display();
         switch (op) {
-            case EXERCISE1 -> {
+            case EXO1_STUDENTS -> {
                 System.out.println("You selected Exo 1");
-                Exercise1 ex = new Exercise1();
+                Exo1Students ex = new Exo1Students();
             }
-            case EXERCISE2 -> {
+            case EXO2_ARRAYS -> {
                 System.out.println("You selected Exo 2");
-                Exercise2 ex = new Exercise2();
+                Exo2ArrayManipulation ex = new Exo2ArrayManipulation();
             }
             default -> {
                 System.out.println("Pas d'options");

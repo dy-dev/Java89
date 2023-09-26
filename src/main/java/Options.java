@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum Options {
-    EXERCISE1(1),
-    EXERCISE2(2);
+    EXO1_STUDENTS(1),
+    EXO2_ARRAYS(2);
     private final int value;
     private static final Map<Integer, Options> map = new HashMap<>();
 

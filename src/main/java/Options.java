@@ -3,7 +3,8 @@ import java.util.Map;
 
 public enum Options {
     EXO1_STUDENTS(1),
-    EXO2_ARRAYS(2);
+    EXO2_ARRAYS(2),
+    EXO3_PRIME(3);
     private final int value;
     private static final Map<Integer, Options> map = new HashMap<>();
 

@@ -16,6 +16,10 @@ public class StarterClass {
                 System.out.println("You selected Exo 2");
                 Exo2ArrayManipulation ex = new Exo2ArrayManipulation();
             }
+            case EXO3_PRIME -> {
+                System.out.println("You selected Exo 3");
+                Exo3PrimeNumbers ex = new Exo3PrimeNumbers();
+            }
             default -> {
                 System.out.println("Pas d'options");
             }
